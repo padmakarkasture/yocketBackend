@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
+  app.enableCors()
   console.log('mongoConnnectionString: ', process.env.MONGO_CONNECTION_STRING)
 
   //swagger config
@@ -25,6 +25,11 @@ async function bootstrap() {
 
 
   await app.listen(process.env.PORT);
+  console.log("documentation is on ")
+  console.log(`http://locahost:${process.env.PORT}/api/documentation`)
+  console.log('or')
+  console.log(`http://0.0.0.0:${process.env.PORT}/api/documentation`)
+
 
 }
 bootstrap();
