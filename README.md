@@ -26,6 +26,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+# Authoer
+
+padmakar kasture
+9145557441
+kasturepadmakar4u@gmail.com
+
 ## Installation
 
 ```bash
