@@ -42,13 +42,13 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ export NODE_ENV=local && npm run start
 
 # watch mode
-$ npm run start:dev
+$ export NODE_ENV=local && npm run start:dev
 
 # production mode
-$ npm run start:prod
+$ export NODE_ENV=local && npm run start:prod
 ```
 
 ## Test
